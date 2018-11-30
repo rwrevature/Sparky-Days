@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <h1 onclick="sayHello()">Click me!!</h1>
+        <h1 onmouseover="this.innerHTML='I have changed!'">Mouse over me.</h1>
+        <h1 id="gator">I am controlled by a event handler.</h1>
+    </body>
+    <script>
+        function sayHello(){
+            console.log("Hello");
+        }
+        gatorbox=document.getElementById("gator")
+        gatorbox.addEventListener("click", sayHello);
+    </script>
+</html>
